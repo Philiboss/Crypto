@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=Block
-comment1.params=data\ previousHash
-comment1.target=Block(java.lang.String,\ java.lang.String)
-comment2.params=
-comment2.target=java.lang.String\ calculateHash()
-comment3.params=difficulty
-comment3.target=void\ mineBlock(int)
-numComments=4
