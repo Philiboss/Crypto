@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=StringUtil
+comment1.params=input
+comment1.target=java.lang.String\ applySha256(java.lang.String)
+comment2.params=o
+comment2.target=java.lang.String\ getJson(java.lang.Object)
+comment3.params=difficulty
+comment3.target=java.lang.String\ getDificultyString(int)
+numComments=4
