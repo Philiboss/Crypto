@@ -5,8 +5,8 @@ public class Block {
     
     public String hash;
     public String previousHash; 
-    private String data; //our data will be a simple message.
-    private long Datum; //as number of milliseconds since 1/1/1970.
+    private String data; 
+    private long Datum; 
     private int nonce;
     
     //Block Constructor.  
@@ -15,7 +15,7 @@ public class Block {
         this.previousHash = previousHash;
         this.Datum = new Date().getTime();
         
-        this.hash = calculateHash(); //Making sure we do this after we set the other values.
+        this.hash = calculateHash(); 
     }
     
     //Calculate new hash based on blocks contents
@@ -31,9 +31,9 @@ public class Block {
         return sha256hex;
     }
     
-    //Increases nonce value until hash target is reached.
+ 
     public void mineBlock(int difficulty) {
-        String target = StringUtil.getDificultyString(difficulty); //Create a string with difficulty * "0" 
+        String target = StringUtil.getDificultyString(difficulty); 
         while(!hash.substring( 0, difficulty).equals(target)) {
             nonce ++;
             hash = calculateHash();
